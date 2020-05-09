@@ -28,7 +28,7 @@
     "_execute_browser_action": {
       "suggested_key": {
         "default": "Ctrl+Q",
-        "windows": "Ctrl+Space",
+        "windows": "Ctrl+Q",
         "mac": "MacCtrl+Q"
       }
     }
