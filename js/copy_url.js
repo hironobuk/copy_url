@@ -1,7 +1,4 @@
 $(() => {
-  format();
-  copy();
-
   $('input[name="format"]:radio').change(() => {
     format();
   });
@@ -9,6 +6,8 @@ $(() => {
   $('#copy').on('click', () => {
     copy();
   });
+
+  format();
 });
 
 /**
@@ -26,6 +25,8 @@ function format() {
           $('#format_url').val(formatPlainText(tab.title, tab.url));
           break;
       }
+
+      copy();
     });
   });
 }
