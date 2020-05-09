@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css" media="all">
+  </head>
+  <body>
+    <div class="container" style="padding: 10px;">
+      <div class="field">
+        <label class="label is-small">フォーマット</label>
+        <div class="control">
+          <label class="radio">
+            <input type="radio" name="format" value="markdown" checked>
+            Markdown
+          </label>
+          <label class="radio">
+            <input type="radio" name="format" value="plaintext">
+            Plain Text
+          </label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+          <textarea id="format_url" class="textarea is-small" rows="2"></textarea>
+        </div>
+      </div>
+      <div class="field is-grouped is-grouped-right">
+        <div class="control">
+          <button id="copy" class="button is-link is-small">Copy</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="js/copy_url.js"></script>
+  </body>
+</html>
