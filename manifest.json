@@ -29,7 +29,7 @@
       "suggested_key": {
         "default": "Ctrl+Q",
         "windows": "Ctrl+Q",
-        "mac": "MacCtrl+Q"
+        "mac": "Command+Q"
       }
     }
   }
