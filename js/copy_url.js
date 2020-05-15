@@ -21,6 +21,10 @@ function format() {
           $('#format_url').val(formatMarkdown(tab.title, tab.url));
           break;
 
+        case 'jira':
+          $('#format_url').val(formatJira(tab.title, tab.url));
+          break;
+
         case 'plaintext':
           $('#format_url').val(formatPlainText(tab.title, tab.url));
           break;
@@ -70,6 +74,16 @@ function htmlspecialchars_decode(str) {
  */
 function formatMarkdown(title, url) {
   return `[${ htmlspecialchars_decode(title) }](${ url })`;
+}
+
+/**
+ * Jiraでのリンク形式に整形する
+ * @param {string} title
+ * @param {string} url
+ * @returns {string}
+ */
+function formatJira(title, url) {
+  return `[${ title }|${ url }]`;
 }
 
 /**
